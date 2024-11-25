@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahim's Collection</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #fa1e1e;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5em;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #fff;
+            color: #fa1e1e;
+        }
+
+        /* Auth buttons */
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-button {
+            background-color: #fff;
+            color: #fa1e1e;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .auth-button:hover {
+            background-color: #ffd6d6;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #fff;
+            color: #333;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-button {
+            background-color: #fff;
+            color: #fa1e1e;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: 2px solid #fa1e1e;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #fa1e1e;
+            color: #fff;
+        }
+
+        /* Features section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fahim's Collection</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="register.html" class="auth-button">Register</a>
+            <a href="login.html" class="auth-button">Login</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Fahim's Collection</h2>
+            <p>Your one-stop shop for the latest and greatest in fashion!</p>
+            <a href="shop.html" class="cta-button">Start Shopping</a><br>
+            <br><img src="image/indexpic.jpg" alt="Fahim's Collection" style="width: 100%; height: auto;">
+        </section>
+        <section class="features">
+            <h1>Latest Trends</h1>
+            <h1>Quality Products</h1>
+            <h1>Fast Shipping</h1><br>
+            <h3>Contact us at: <a href="mailto:fahimcubes@gmail.com">fahimcubes@gmail.com</a></h3>
+        </section>
+        <br>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fahim's Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>

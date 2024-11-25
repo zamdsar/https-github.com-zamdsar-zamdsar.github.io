@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Fahim's Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.5;
+            background-color: #f8f7f7;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #fa1e1e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5em;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffea00; /* Change color on hover */
+        }
+
+        /* Products section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .product-item {
+            background-color: #ffffff;
+            padding: 50px;
+            border: 1px solid #f0f0f0;
+            border-radius: 0px;
+            text-align: center;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product-item p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .product-item .price {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .product-item .buy-button,
+        .product-item .details-button {
+            background-color: #333;
+            color: #ffffff;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 1px;
+            cursor: pointer;
+            border: none;
+            margin: 1px;
+        }
+
+        .product-item .buy-button:hover,
+        .product-item .details-button:hover {
+            background-color: #fa1e1e;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fahim's Collection</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product-item">
+                <img src="image/tshirt.jpg" alt="Tshirt">
+                <p>Tshirt</p>
+                <div class="price">21 MYR</div>
+                <button class="buy-button" onclick="addToCart('Tshirt', 21)">Buy Now</button>
+                <a href="tshirt-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/shirt.jpg" alt="Shirt">
+                <p>Shirt</p>
+                <div class="price">29 MYR</div>
+                <button class="buy-button" onclick="addToCart('Shirt', 29)">Buy Now</button>
+                <a href="shirt-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/joggintrouser.jpg" alt="Jogging Trouser">
+                <p>Jogging Trouser</p>
+                <div class="price">39.99 MYR</div>
+                <button class="buy-button" onclick="addToCart('Jogging Trouser', 39.99)">Buy Now</button>
+                <a href="jogging-trouser-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/jacket.jpg" alt="Jacket">
+                <p>Jacket</p>
+                <div class="price">120 MYR</div>
+                <button class="buy-button" onclick="addToCart('Jacket', 120)">Buy Now</button>
+                <a href="jacket-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/jeanspant.jpg" alt="Jeans Pant">
+                <p>Jeans Pant</p>
+                <div class="price">70 MYR</div>
+                <button class="buy-button" onclick="addToCart('Jeans Pant', 70)">Buy Now</button>
+                <a href="jeans-pant-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/dresspant.jpg" alt="Dress Pant">
+                <p>Dress Pant</p>
+                <div class="price">88 MYR</div>
+                <button class="buy-button" onclick="addToCart('Dress Pant', 88)">Buy Now</button>
+                <a href="dress-pant-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/coatpant.jpg" alt="Coat Pant">
+                <p>Coat Pant</p>
+                <div class="price">200 MYR</div>
+                <button class="buy-button" onclick="addToCart('Coat Pant', 200)">Buy Now</button>
+                <a href="coat-pant-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/tie.jpg" alt="Tie">
+                <p>Tie</p>
+                <div class="price">15 MYR</div>
+                <button class="buy-button" onclick="addToCart('Tie', 15)">Buy Now</button>
+                <a href="tie-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/sleepingdress.jpg" alt="Sleeping Dress">
+                <p>Sleeping Dress</p>
+                <div class="price">75 MYR</div>
+                <button class="buy-button" onclick="addToCart('Sleeping Dress', 75)">Buy Now</button>
+                <a href="sleeping-dress-details.html" class="details-button">Details</a>
+            </div>
+            <div class="product-item">
+                <img src="image/glasses.jpg" alt="Glasses">
+                <p>Sun Glasses</p>
+                <div class="price">250 MYR</div>
+                <button class="buy-button" onclick="addToCart('Belt', 250)">Buy Now</button>
+                <a href="glasses-details.html" class="details-button">Details</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fahim's Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
